@@ -13,25 +13,23 @@ function Hero() {
         </p>
       </div>
 
-      <div className="flex flex-row justify-between mt-8 px-16">
+      <div className="flex flex-row justify-between mt-8 px-4">
         <div className="flex flex-row mb-4 justify-between">
-          <p className="px-16 py-3 mr-16 text-black font-medium text-left">
+          <p className="pr-16 py-3 mr-16 text-black font-medium  ">
             RETRO PREPPY
           </p>
           <a
             href="#"
-            className="px-16 py-3 ml-16 text-black text-right font-medium underline "
+            className="ml-[320px] py-3  text-black text-right font-medium underline "
           >
             SHOP NOW
           </a>
         </div>
-        <div className="flex flex-row mb-4 justify-between">
-          <p className=" px-16 py-3 mr-16 text-black font-medium">
-            CLASSICS RE-IMAGINED
-          </p>
+        <div className="flex flex-row mb-4 justify-start">
+          <p className=" py-3  text-black font-medium">CLASSICS RE-IMAGINED</p>
           <a
             href="#"
-            className=" px-16 py-3 ml-14  text-black font-medium underline "
+            className=" py-3 ml-[380px]  text-black font-medium underline "
           >
             SHOP NOW
           </a>
