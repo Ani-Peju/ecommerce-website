@@ -1,26 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
-import TopClothing from "./components/TopClothing";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import BottomClothing from "./components/BottomClothing";
 import Accessories from "./components/Accessories";
-import ShoppingCart from "./components/ShoppingCart";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Navbar />
-
-      <Routes>
-        <Route path='/'  element={<Hero/>} />
-          <Route path='/tops' element={<TopClothing/>} />
-          <Route path='/bottoms' element={<BottomClothing/>} />
-          <Route path='/accessories' element={<Accessories/>} />
-          <Route path='/shopping-cart' element={<ShoppingCart/>} />
-      </Routes>
-    </BrowserRouter>
+    <div className="App">
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Hero />} />
+          <Route path="/BottomClothing" element={<BottomClothing />} />
+          <Route path="/Accessories" element={<Accessories />} />
+        </Routes>
+        <Footer />
+      </Router>
+    </div>
   );
 }
 

@@ -1,17 +1,32 @@
-import {BrowserRouter,Route,Routes} from "react-router-dom";
+import React from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
-    return (
-        <nav>
-            <ul>
-                <li><a>Home</a></li>
-                <li><a>Tops</a></li>
-                <li><a>Bottoms</a></li>
-                <li><a>Accessories</a></li>
-            </ul>
+  return (
+    <nav className="mr-10">
+      <ul className="flex space-x-6">
+        <li>
+          <Link to="/" className="text-gray-600 hover:text-gray-800">
+            Home
+          </Link>
+        </li>
 
-        </nav>
-    );
+        <li>
+          <Link
+            to="/BottomClothing"
+            className="text-gray-600 hover:text-gray-800"
+          >
+            Bottoms
+          </Link>
+        </li>
+        <li>
+          <Link to="/Accessories" className="text-gray-600 hover:text-gray-800">
+            Accessories
+          </Link>
+        </li>
+      </ul>
+    </nav>
+  );
 }
 
 export default Navbar;
