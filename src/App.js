@@ -4,6 +4,8 @@ import Hero from "./components/Hero";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import BottomClothing from "./components/BottomClothing";
 import Accessories from "./components/Accessories";
+import TopClothing from "./components/TopClothing";
+import ShoppingCart from "./components/ShoppingCart";
 
 function App() {
   return (
@@ -12,8 +14,10 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Hero />} />
-          <Route path="/BottomClothing" element={<BottomClothing />} />
-          <Route path="/Accessories" element={<Accessories />} />
+          <Route path="/top-clothing" element={<TopClothing />} />
+          <Route path="/bottom-clothing" element={<BottomClothing />} />
+          <Route path="/accessories" element={<Accessories />} />
+          <Route path="/shopping-cart" element={<ShoppingCart/>}/>
         </Routes>
         <Footer />
       </Router>
